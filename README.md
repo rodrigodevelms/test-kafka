@@ -1,5 +1,5 @@
 PASSOS
-no terminal digite: 
+no terminal digite:   
 1 ) docker-compose up -d  
 2 ) docker-compose exec broker-test bash    
 3 ) kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic samePartition  
