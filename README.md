@@ -11,7 +11,13 @@ voltando ao terminal execute:
 1 ) kafka-console-consumer --bootstrap-server localhost:9092 --topic samePartition --group sp --from-beginning  
 2 ) kafka-console-consumer --bootstrap-server localhost:9092 --topic samePartition --group rr --from-beginning  
 3 ) kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group sp  
-4 ) kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group rr
+4 ) kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group rr  
+  
+  altere o número de partições  
+    
+5 ) kafka-topics --alter --bootstrap-server localhost:9092 --topic samePartition --partitions 10  
+  
+  volte a executar os testes.
 
 
 
